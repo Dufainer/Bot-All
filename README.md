@@ -85,8 +85,8 @@ A feature-rich Discord economy bot built with **discord.js v14**, **SQLite**, an
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Dufainer/Bot-All.git
-cd Bot-All
+git clone https://github.com/Dufainer/Orbital-Bot.git
+cd Orbital-Bot
 ```
 
 ### 2. Install dependencies
