@@ -216,6 +216,12 @@ Orbital-Bot/
 
 ---
 
+## Credits
+
+- Built with the help of [Claude](https://claude.ai) (Anthropic) — AI pair programmer
+
+---
+
 ## License
 
 MIT
