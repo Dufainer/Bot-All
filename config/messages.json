@@ -1,0 +1,275 @@
+{
+  "_comment": "Bot visual configuration — edit freely. {variable} placeholders are replaced at runtime. Numbers are auto-formatted with commas.",
+
+  "coin": "<:Coin:1483028601501908992>",
+
+  "colors": {
+    "success":   "#22C55E",
+    "error":     "#EF4444",
+    "info":      "#5865F2",
+    "fishing":   "#38BDF8",
+    "lottery":   "#A855F7",
+    "store":     "#F59E0B",
+    "stable":    "#8B5CF6",
+    "inventory": "#6366F1",
+    "empty":     "#64748B"
+  },
+
+  "errors": {
+    "noPermission":       "❌ You do not have permission to use this command.",
+    "invalidAmount":      "❌ Amount must be a positive integer.",
+    "noAmount":           "❌ Please provide an amount.",
+    "insufficientWallet": "💸 Insufficient wallet balance.",
+    "insufficientBank":   "💸 Insufficient bank balance.",
+    "selfTarget":         "❌ You cannot target yourself.",
+    "noMention":          "❌ Please mention a valid user.",
+    "generic":            "❌ An error occurred while executing this command."
+  },
+
+  "cooldown": "⏳ Cooldown active. Try again in **{seconds}s**.",
+
+  "deposit": {
+    "success": "🏦 Deposited **+{amount}** {coin} to the bank. Bank: **{bank}** {coin}"
+  },
+
+  "withdraw": {
+    "success": "🏦 Withdrew **+{amount}** {coin} to wallet. Wallet: **{wallet}** {coin}"
+  },
+
+  "pay": {
+    "success": "💸 Sent **{amount}** {coin} to <@{targetId}>. Wallet: **{newBalance}** {coin}",
+    "selfPay": "❌ You cannot send coins to yourself."
+  },
+
+  "rob": {
+    "success": "🔫 You robbed **{stolen}** {coin} from <@{targetId}>!",
+    "empty":   "💸 That user has nothing in their wallet.",
+    "selfRob": "❌ You cannot rob yourself."
+  },
+
+  "give": {
+    "success": "💸 Gave **{amount}** {coin} to <@{targetId}>."
+  },
+
+  "use": {
+    "usageHint":     "❌ Usage: `use <item ID>`",
+    "notFound":      "❌ Item not found in the shop.",
+    "notOwned":      "❌ You don't have that item in your inventory.",
+    "noRole":        "❌ That item has no usable effect.",
+    "title":         "✨  Item Used!",
+    "description":   "You used **{name}** from your inventory.",
+    "fieldRole":     "🎭  Role Granted",
+    "fieldStatus":   "✅  Status",
+    "statusGranted": "Role assigned successfully!",
+    "statusFailed":  "Could not assign role (missing permissions)."
+  },
+
+  "buy": {
+    "notFound":        "❌ Item not found in the shop.",
+    "noBalance":       "💸 You need **{price}** {coin} to buy this item.",
+    "success":         "✅ You bought **{name}** for **{price}** {coin}!",
+    "title":           "✅  Purchase Successful!",
+    "roleRewardLabel": "🎭  Role Reward",
+    "thumbnail":       "https://cdn.discordapp.com/attachments/1227025952924635147/1227029093476991116/athena_ty.png"
+  },
+
+  "admin": {
+    "give":              "💸 Gave **{amount}** {coin} to <@{targetId}>.",
+    "take":              "✂️ Took **{amount}** {coin} from <@{targetId}>. Their wallet: **{remaining}** {coin}",
+    "setwallet":         "📝 Set <@{targetId}>'s wallet to **{amount}** {coin}.",
+    "setbank":           "📝 Set <@{targetId}>'s bank to **{amount}** {coin}.",
+    "reset":             "♻️ Reset wallet, bank, and inventory for <@{targetId}>.",
+    "wipe":              "⚠️ The entire server economy has been wiped.",
+    "richlistTitle":     "🏆  Richest Users",
+    "richlistLine":      "**{rank}.** <@{id}> — **{total}** {coin}",
+    "richlistEmpty":     "No economy data yet.",
+    "lookupTitle":       "🔍  Lookup: <@{id}>",
+    "lookupDesc":        "💰 Wallet: **{wallet}** {coin}\n🏦 Bank: **{bank}** {coin}\n💎 Total: **{total}** {coin}",
+    "econstatTitle":     "📊  Economy Stats",
+    "econstatDesc":      "👤 Users: **{users}**\n💰 In wallets: **{wallet}** {coin}\n🏦 In banks: **{bank}** {coin}\n💎 Total: **{total}** {coin}",
+    "itemAdded":         "✅ Added **{itemName}** to <@{targetId}>'s inventory.",
+    "itemRemoved":       "✅ Removed **{itemName}** from <@{targetId}>'s inventory.",
+    "itemNotFound":      "❌ Item not found in the store.",
+    "itemNotInInventory":"❌ That user does not have that item.",
+    "unknownSub":        "❌ Unknown action.",
+    "usage": [
+      "`give <@user> <amount>` — Add coins to wallet",
+      "`take <@user> <amount>` — Remove coins from wallet",
+      "`setwallet <@user> <amount>` — Set wallet to exact value",
+      "`setbank <@user> <amount>` — Set bank to exact value",
+      "`reset <@user>` — Zero wallet + bank + inventory",
+      "`wipe` — Wipe entire server economy",
+      "`richlist` — Top 10 richest users",
+      "`lookup <@user>` — Full user balance",
+      "`econstat` — Global economy stats",
+      "`additem <@user> <item-id>` — Add item to inventory",
+      "`removeitem <@user> <item-id>` — Remove item from inventory"
+    ]
+  },
+
+  "work": {
+    "title":       "✨  Mission Complete",
+    "description": "You worked **{job}**\nand earned **+{amount}** {coin}"
+  },
+
+  "fish": {
+    "title":        "{emoji}  You caught a {fish}!",
+    "fieldEarned":  "💵  Earned",
+    "fieldBalance": "💰  Balance",
+    "emojis": {
+      "Sardine":  "🐟",
+      "Trout":    "🐠",
+      "Salmon":   "🍣",
+      "Dorado":   "🐡",
+      "Shark":    "🦈",
+      "_default": "🎣"
+    }
+  },
+
+  "bet": {
+    "winTitle":     "🎉  You Won!",
+    "loseTitle":    "💸  You Lost",
+    "fieldRoll":    "🎰  Roll",
+    "fieldWon":     "📈  Won",
+    "fieldLost":    "📉  Lost",
+    "fieldBalance": "💰  Balance",
+    "colorEmojis": {
+      "red":      "🔴",
+      "black":    "⚫",
+      "green":    "🟢",
+      "_default": "🟡"
+    }
+  },
+
+  "lottery": {
+    "title":             "🎟️  Grand Lottery",
+    "infoDescription":   "Pick any number from **000** to **999**.\nTicket price: **{price}** {coin}",
+    "footer":            "Usage: lottery <000–999>",
+    "winTitle":          "{place}  —  You Won!",
+    "loseTitle":         "😢  Better luck next time",
+    "insufficientFunds": "💸 Not enough coins. Balance: **{wallet}** / Ticket: **{price}** {coin}",
+    "placeLabels":       ["🥇  1st", "🥈  2nd", "🥉  3rd"],
+    "fieldYourNumber":     "🎯  Your number",
+    "fieldWinningNumbers": "🎟️  Winning numbers",
+    "fieldPrize":          "🏆  Prize",
+    "fieldBalance":        "💰  Balance",
+    "ticketPrice": 100,
+    "prizes":      [10000, 5000, 1000]
+  },
+
+  "salary": {
+    "ownLabel":    "Your Balance",
+    "otherLabel":  "{username}'s Balance",
+    "fieldWallet": "💰  Wallet",
+    "fieldBank":   "🏦  Bank",
+    "fieldTotal":  "💎  Total"
+  },
+
+  "race": {
+    "winTitle":          "🏆  {horseName} won the race!",
+    "loseTitle":         "💨  {horseName} didn't place",
+    "fieldWon":          "📈  Won",
+    "fieldLost":         "📉  Lost",
+    "fieldBalance":      "💰  Balance",
+    "notOwned":          "❌ You don't own that horse. Check `/stable` for your horses.",
+    "insufficientFunds": "💸 Not enough coins for that bet."
+  },
+
+  "stable": {
+    "title":            "🐎  Cosmic Stable",
+    "emptyDescription": "Your stable is empty.\nVisit `/store` to buy a horse and race it with `/hr`.",
+    "description":      "You own **{count}** horse breed{plural}. Use `/hr` to race them.",
+    "horseLabel":       "🐎  {name}  ×{quantity}",
+    "fieldSpeed":       "⚡ **Speed:** {speed}",
+    "fieldWinChance":   "🎲 **Win chance:** {chance}%",
+    "fieldOdds":        "📊 **Odds:** {odds}",
+    "fieldId":          "🆔 **ID:** `{id}`",
+    "fieldSeparator":   "  ·  "
+  },
+
+  "store": {
+    "title":       "🏪  Cosmic Shop",
+    "image":       "https://cdn.discordapp.com/attachments/1227025952924635147/1227027324151795863/athena_store.png",
+    "miscHeader":  "**🎒 Miscellaneous**",
+    "horsesHeader":"**🐎 Horses**",
+    "miscFooter":  "Page 1 / 2  ·  {total} items total",
+    "horsesFooter":"Page 2 / 2  ·  {total} items total",
+    "buyHint":     "> Use `/buy` and select an item to purchase",
+    "buyHorseHint":"> Use `/buy` and select a horse to purchase",
+    "btnMisc":     "🎒  Miscellaneous",
+    "btnHorses":   "🐎  Horses"
+  },
+
+  "inventory": {
+    "title":            "  Inventory",
+    "emptyDescription": "Your inventory is empty.\nVisit `/store` to browse items and use `/buy` to purchase.",
+    "miscHeader":       "🎒  Miscellaneous",
+    "horsesHeader":     "🐎  Horses",
+    "btnMisc":          "🎒  Miscellaneous",
+    "btnHorses":        "🐎  Horses"
+  },
+
+  "help": {
+    "title":  "✨  Cosmic Bot — Commands",
+    "footer": "Prefix: $ · ! · h  |  Slash: /  |  Use \"all\" for wallet/bank amounts",
+    "sections": {
+      "economy": {
+        "label": "🪙  Economy",
+        "lines": [
+          "`work` — Earn coins from a random job *(30s)*",
+          "`salary [@user]` — Wallet & bank balance",
+          "`deposit <amt>` — Wallet → Bank",
+          "`withdraw <amt>` — Bank → Wallet",
+          "`pay <@user> <amt>` — Send coins",
+          "`rob <@user>` — Steal from a user's wallet",
+          "`bet <amt> <red|black|low|high|0-36>` — Roulette"
+        ]
+      },
+      "games": {
+        "label": "🎮  Games",
+        "lines": [
+          "`fish` — Go fishing *(15s)*",
+          "`lottery [000-999]` — Buy a lottery ticket",
+          "`hr <horse> <bet>` — Race your horse"
+        ]
+      },
+      "store": {
+        "label": "🏪  Store",
+        "lines": [
+          "`store` — Browse all items",
+          "`buy` — Purchase an item from the shop",
+          "`inventory` — Your items",
+          "`use <id>` — Use a role item from inventory",
+          "`stable` — Your horses & stats"
+        ]
+      },
+      "utility": {
+        "label": "🔧  Utility",
+        "lines": [
+          "`avatar [@user]` — Display a user's avatar"
+        ]
+      }
+    }
+  },
+
+  "workJobs": [
+    { "name": "selling shooting stars",        "minPay": 50,  "maxPay": 100  },
+    { "name": "building a galaxy in C#",        "minPay": 150, "maxPay": 300  },
+    { "name": "writing stellar JavaScript code","minPay": 100, "maxPay": 200  },
+    { "name": "painting a portrait of the moon","minPay": 200, "maxPay": 400  },
+    { "name": "DJing at a stellar party",       "minPay": 50,  "maxPay": 150  },
+    { "name": "navigating the Milky Way",       "minPay": 200, "maxPay": 500  },
+    { "name": "planting trees on Mars",         "minPay": 300, "maxPay": 600  },
+    { "name": "building a space telescope",     "minPay": 400, "maxPay": 800  },
+    { "name": "studying black holes",           "minPay": 500, "maxPay": 1000 },
+    { "name": "exploring new galaxies",         "minPay": 600, "maxPay": 1200 }
+  ],
+
+  "fishTypes": [
+    { "name": "Sardine", "min": 5,  "max": 15,  "probability": 0.40 },
+    { "name": "Trout",   "min": 10, "max": 25,  "probability": 0.30 },
+    { "name": "Salmon",  "min": 20, "max": 40,  "probability": 0.15 },
+    { "name": "Dorado",  "min": 30, "max": 60,  "probability": 0.10 },
+    { "name": "Shark",   "min": 50, "max": 100, "probability": 0.05 }
+  ]
+}

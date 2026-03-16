@@ -1,3 +1,32 @@
-node_modules
-node_modules
+# Environment — never commit tokens or secrets
 .env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# SQLite database files
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-shm
+*.sqlite-wal
+
+# Logs
+logs/
+*.log
+
+# Build output
+build/
+dist/
+
+# Legacy / unused files
+userData.json
+.babelrc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,13 +1,16 @@
 {
-  "name": "botdc",
+  "name": "orbital-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "node deploy.js",
     "dev": "nodemon index.js",
-    "fix": "npx standard --fix src"
+    "lint": "standard src",
+    "fix": "standard --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -15,13 +18,13 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
-    "node-fetch": "^3.3.2",
-    "nodemon": "^3.1.0",
-    "standard": "^17.1.0"
+    "node-cache": "^5.1.2",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.19.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "babel": "^6.23.0"
+    "nodemon": "^3.1.0",
+    "standard": "^17.1.0"
   }
 }
